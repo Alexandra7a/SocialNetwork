@@ -1,0 +1,51 @@
+site:   https://www.baeldung.com/java-secure-aes-key
+
+obs: you can add a short example of hos important the password is and how easy it can be broken
+if too short or too basic
+obs2: add the little story with some pictures
+'I want to star the presentation by addressing you a question: How much attention do you pay when choosing a password?
+telling you a story about this person (insert news about broken accounst here)'
+
+ - A symmetric cipher uses the same secret key for both encryption and decryption.
+ A block cipher means it works on 128 bits blocks of the input Plaintext.
+
+- cheia
+Key Size	Block Size	# Rounds
+128         	128	        10
+192	            128     	12
+256	            128     	14
+
+
+key size
+block size- mesjul va fi pus aici
+
+
+When it comes to cryptographic key sizes, such as AES-128 with a 128-bit key,
+ there are 2^128 possible unique keys because each bit in the key can be independently
+ set to 0 or 1, resulting in an enormous number of potential
+ combinations (2^128 = 340,282,366,920,938,463,463,374,607,431,768,211,456) - ENORMOUS
+        => time, energy and money consuming task...
+        hence, daunting for a brute force approach
+
+    For a much longer sequrnce of bits aka the size of the key being 192 or 256, makes the kob even
+    more difficult
+
+
+ AES-128 keys are 128 bits, which means there are 2^128 possible values. It’d take a humongous and infeasible
+ amount of time and money to search through this. Hence, AES is practically unbreakable by a brute-force approach.
+
+ There have been a few non-brute-force approaches but these could only reduce the possible key lookup space
+ by a couple of bits.
+
+ All this means is that with zero knowledge about the key, AES is practically impossible to break.
+
+
+ Ways to provide the secret key:
+ 1. Random class in java
+ 2. SecureRandom class in java
+ 3. KeyGenerator from Java’s crypto package -> javax.crypto
+4. Password-Based Key
+        -based on the actual human-readable password
+        -a password is not commonly 128 bits long so we use salt to generate more random characters
+        after the orriginal one to be more secure(? so how does the decription mode go then de unde stim cat e introdus de user si cat nu)
+

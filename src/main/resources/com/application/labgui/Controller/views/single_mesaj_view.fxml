@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="60.0" prefWidth="424.0" stylesheets="@../../styles/general_style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.labgui.Controller.MesajViewController">
+   <children>
+      <GridPane prefHeight="60.0" prefWidth="424.0" style="    -fx-border-color: #b99470;
+    -fx-border-width: 1px;-fx-background-color: PaleGoldenrod" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="77.0" prefHeight="75.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="dataTextEu" alignment="TOP_RIGHT" textFill="#00000066" GridPane.columnIndex="2">
+               <font>
+                  <Font size="8.0" />
+               </font></Label>
+            <Label fx:id="mesajReplyTextEu" alignment="CENTER_RIGHT" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <TextFlow fx:id="textAreaEu" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="361.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="dataTextEl" textFill="#00000066" GridPane.halignment="LEFT">
+               <font>
+                  <Font size="8.0" />
+               </font></Label>
+            <Label fx:id="mesajReplyTextEl" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <TextFlow fx:id="textAreaEl" nodeOrientation="LEFT_TO_RIGHT" prefHeight="28.0" prefWidth="190.0" GridPane.rowIndex="2" />
+            <Button fx:id="replyButton" mnemonicParsing="false" onAction="#handlerReply" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <graphic>
+                    <ImageView fitWidth="10.0" preserveRatio="true">
+                        <Image url="@../../Images/reply.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

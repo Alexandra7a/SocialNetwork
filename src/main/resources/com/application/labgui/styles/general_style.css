@@ -1,0 +1,36 @@
+.text{
+    -fx-font-family: "Arial";
+}
+.table-row-cell:even{
+    -fx-background-color: PaleGoldenrod;
+}
+.table-row-cell:odd{
+    -fx-background-color: #e8da90;
+}
+.column-header{
+    -fx-background-color: #e8da90;
+}
+.table-row-cell:selected{
+    -fx-background-color: #f16b6b;
+}
+.button {
+    -fx-background-color: LightPink;
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+}
+
+/*SLIDER*/
+.slider {
+    -fx-background-color: transparent;
+}
+
+.slider .track {
+    -fx-background-color: LightPink; /* Gray track color */
+}
+
+.slider .thumb {
+    -fx-background-color: #f16b6b; /* Blue thumb color */
+    -fx-border-color: #ffffff; /* Black border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+}
