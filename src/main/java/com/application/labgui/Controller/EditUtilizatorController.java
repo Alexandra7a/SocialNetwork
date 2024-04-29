@@ -46,8 +46,6 @@ public class EditUtilizatorController {
         }
         else{
             this.idTextField.setText("Will be generated");
-            this.prenumeTextField.setPromptText("INTRODU PRENUME");
-            this.numeTextField.setPromptText("INTRODU NUME");
         }
     }
 
